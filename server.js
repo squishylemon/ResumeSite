@@ -19,6 +19,10 @@ server.get("/", (request, response) => {
   response.render("index");
 });
 
+server.get("/admin", (request, response) => {
+  response.render("admin");
+});
+
 server.get("/contact", (request, response) => {
   response.render("contact");
 });
