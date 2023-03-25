@@ -1,0 +1,64 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    line-height: 1.5;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  
+  /* Main */
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  .print-button {
+    display: none;
+  }
+  
+  .pdf-button {
+    display: none;
+  }
+  
+  @media print {
+    button {
+      display: none;
+    }
+  
+    .print-button {
+      display: inline-block;
+    }
+  
+    .pdf-button {
+      display: inline-block;
+    }
+  }
+  

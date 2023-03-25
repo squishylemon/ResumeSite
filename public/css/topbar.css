@@ -1,0 +1,48 @@
+/* Set nav styles */
+nav {
+    background-color: #ffc107;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  /* Set nav styles for screens smaller than 768px */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    nav ul li:first-child {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Set nav ul styles */
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set nav ul li styles */
+  nav ul li:first-child {
+    margin-right: auto;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+  }
+  

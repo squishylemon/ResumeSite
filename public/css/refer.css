@@ -1,0 +1,191 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ffd700;
+  }
+  
+  button {
+    background-color: #ffd700;
+    border: none;
+    border-radius: 4px;
+    color: #1a1a1a;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+  }
+  
+  img {
+    border-radius: 50%;
+    display: block;
+    margin: 16px auto;
+    max-width: 200px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 32px;
+  }
+  
+  p {
+    margin-bottom: 16px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li::before {
+    content: "\2022";
+    color: #ffd700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* Section styles */
+  section {
+    margin: 64px auto;
+    max-width: 800px;
+    padding: 32px;
+  }
+  
+  section ul {
+    column-count: 3;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+  
+    section {
+      margin: 32px auto;
+      padding: 16px;
+    }
+  
+    section ul {
+      column-count: 2;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    section {
+      margin: 16px auto;
+      padding: 8px;
+    }
+  
+    section ul {
+      column-count: 1;
+    }
+  }
+  
+  /* References page styles */
+  form {
+    margin-bottom: 32px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #f2f2f2;
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  ul.references {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    margin-top: 32px;
+  }
+  
+  .references li {
+    background-color: #333;
+    border-radius: 4px;
+    padding: 16px;
+  }
+  
+  .references li h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    }
+    
+    .references li p {
+    color: #f2f2f2;
+    font-size: 16px;
+    margin-bottom: 16px;
+    }
+    
+    .references li a {
+    color: #ffd700;
+    font-weight: bold;
+    }
+    
+    .references li a:hover {
+    color: #f2f2f2;
+    }
+    
+    
+    
+    
+      
