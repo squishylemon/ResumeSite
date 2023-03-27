@@ -4,11 +4,14 @@ const os = require("os");
 const interfaces = os.networkInterfaces();
 const server = express();
 const port = 3000;
+const sqlite3 = require('sqlite3').verbose();
+const fs = require('fs');
 
 server.engine("html", nunjucks.render);
 server.set("view engine", "html");
 server.use(express.static("public"));
 server.use(express.json());
+server.use(express.urlencoded({ extended: true })); // add this line to handle form data
 
 nunjucks.configure("views", {
   autoescape: true,
@@ -51,7 +54,19 @@ server.get("/references", (request, response) => {
   response.render("references");
 });
 
+// Handle the form submission
+server.post("/send-email", (req, res) => {
+  const name = req.body.name;
+  const email = "alex@madpuppet.net";
+  const subject = req.body.subject;
+  const message = req.body.message;
 
+  // Generate the mailto link
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+  // Redirect to the mailto link
+  res.redirect(mailtoLink);
+});
 
 let address;
 
