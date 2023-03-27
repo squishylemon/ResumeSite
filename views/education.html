@@ -6,21 +6,24 @@
     <title>Education - Alexander Daman Podesta</title>
     <link rel="stylesheet" type="text/css" href="/css/topbar.css">
     <link rel="stylesheet" type="text/css" href="/css/education.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/index/base/favicon.png">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/education" class="active">Education</a></li>
-          <li><a href="/references">References</a></li>
-          <li><a href="/chatgpt">ChatGPT</a></li>
-        </ul>
-      </nav>
+        <div>
+          <button onclick="window.location.href='/'">Home</button>
+          <button onclick="window.location.href='/admin'">Admin</button>
+          <button onclick="window.location.href='/about'">About</button>
+          <button onclick="window.location.href='/skills'">Skills</button>
+          <button onclick="window.location.href='/contact'">Contact</button>
+          <button onclick="window.location.href='/projects'">Projects</button>
+          <button class="active" onclick="window.location.href='/education'">Education</button>
+          <button onclick="window.location.href='/references'">References</button>
+          <button onclick="window.location.href='/chatgpt'">ChatGPT</button>
+        </div>
+        </nav>		  
     </header>
     <main>
         <h1>Education</h1>
@@ -38,11 +41,9 @@
         <h2>References</h2>
         <p>I am a student at Ferny Grove State High School, where I have been able to develop my skills in Information Technology and other subjects. I can provide references from teachers and mentors who can speak to my work ethic, creativity, and passion for technology.</p>
       
-        <div class="buttons">
-          <button onclick="window.print()">Print</button>
-          <button onclick="window.open('education.pdf')">Download PDF</button>
-        </div>
       </main>
-      
+      <footer>
+        <button class="print-button" onclick="window.print()">Print</button>
+      </footer> 
   </body>
  </html>      

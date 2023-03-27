@@ -6,23 +6,26 @@
     <title>Projects - Alexander Daman Podesta</title>
 	<link rel="stylesheet" type="text/css" href="/css/topbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/project.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="icon" type="image/png" href="/images/index/base/favicon.png">
   </head>
 <body>
 
-    <header>
+	<header>
 		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/skills">Skills</a></li>
-				<li><a href="/contact">Contact</a></li>
-                <li><a href="/projects" class="active">Projects</a></li>
-				<li><a href="/education">Education</a></li>
-                <li><a href="/references">References</a></li>
-                <li><a href="/chatgpt">ChatGPT</a></li>
-			</ul>
-		</nav>
-    </header>
+			<div>
+			  <button onclick="window.location.href='/'">Home</button>
+			  <button onclick="window.location.href='/admin'">Admin</button>
+			  <button onclick="window.location.href='/about'">About</button>
+			  <button onclick="window.location.href='/skills'">Skills</button>
+			  <button onclick="window.location.href='/contact'">Contact</button>
+			  <button class="active" onclick="window.location.href='/projects'">Projects</button>
+			  <button onclick="window.location.href='/education'">Education</button>
+			  <button onclick="window.location.href='/references'">References</button>
+			  <button onclick="window.location.href='/chatgpt'">ChatGPT</button>
+			</div>
+		  </nav>		  
+	</header>
 	<main>
 	<h1>My Projects</h1>
 
@@ -75,13 +78,12 @@
                 </li>
             </ul>
 
-			<footer>
-				<button onclick="window.print()">Print</button>
-				<button onclick="window.print()">Download PDF</button>
-			  </footer>
+
 
 			</main>
 
-
+			<footer>
+				<button class="print-button" onclick="window.print()">Print</button>
+			  </footer> 
     </body>
 </html>

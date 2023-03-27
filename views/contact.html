@@ -6,56 +6,56 @@
     <title>Contact - Alexander Daman Podesta</title>
     <link rel="stylesheet" type="text/css" href="/css/topbar.css">
     <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/index/base/favicon.png">
   </head>
   <body>
     <header>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/skills">Skills</a></li>
-				<li><a href="/contact" class="active">Contact</a></li>
-                <li><a href="/projects">Projects</a></li>
-				<li><a href="/education">Education</a></li>
-                <li><a href="/references">References</a></li>
-                <li><a href="/chatgpt">ChatGPT</a></li>
-			</ul>
-		</nav>
+      <nav>
+        <div>
+          <button onclick="window.location.href='/'">Home</button>
+          <button onclick="window.location.href='/admin'">Admin</button>
+          <button onclick="window.location.href='/about'">About</button>
+          <button onclick="window.location.href='/skills'">Skills</button>
+          <button class="active" onclick="window.location.href='/contact'">Contact</button>
+          <button onclick="window.location.href='/projects'">Projects</button>
+          <button onclick="window.location.href='/education'">Education</button>
+          <button onclick="window.location.href='/references'">References</button>
+          <button onclick="window.location.href='/chatgpt'">ChatGPT</button>
+        </div>
+        </nav>		  
     </header>
 
     <main>
       <h1>Contact Me</h1>
       <p>Feel free to reach out to me using any of the following methods:</p>
       <ul>
-        <li>Phone: +61423014282</li>
-        <li>Email: alex@madpuppet.net</li>
+        <li>Phone: <a href="tel:+61423014282">+61423014282</a></li>
+        <li>Email: <a href="mailto:alex@madpuppet.net?subject=Contact%20from%20website">alex@madpuppet.net</a></li>
         <li>GitHub: <a href="https://github.com/squishylemon?tab=repositories">https://github.com/squishylemon</a></li>
         <li>Discord: Squishylemon#0512</li>
         <li>Steam: <a href="https://steamcommunity.com/id/Squishylemon007/">https://steamcommunity.com/id/Squishylemon007/</a></li>
       </ul>
 
       <h2>Send me a message</h2>
-      <form action="#" method="POST">
+      <form method="POST" action="/send-email">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
+      
         <label for="subject">Subject:</label>
         <input type="text" id="subject" name="subject" required />
-
+      
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
-
-        <input type="submit" value="Send" />
+      
+        <button type="submit" name="submit">Send</button>
       </form>
+      
+      
     </main>
 
     <footer>
-
-      <button onclick="window.print()">Print</button>
-      <button onclick="window.print()">Download PDF</button>
-    </footer>
+      <button class="print-button" onclick="window.print()">Print</button>
+    </footer> 
   </body>
 </html>

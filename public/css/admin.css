@@ -1,22 +1,4 @@
- /* Main content */
 
- * {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #1a1a1a;
-    color: #f2f2f2;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  main {
-    margin: 20px;
-  }
   
   h1 {
     font-size: 36px;
@@ -49,8 +31,10 @@
     margin-bottom: 20px;
   }
   
-  input[type="submit"] {
+  button[type="submit"] {
     background-color: #ccc;
+    width: 200px;
+    height: 40px;
     color: #1a1a1a;
     padding: 12px 20px;
     border: none;
@@ -58,7 +42,7 @@
     cursor: pointer;
   }
   
-  input[type="submit"]:hover {
+  button[type="submit"]:hover {
     background-color: #45a049;
   }
   

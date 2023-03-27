@@ -4,21 +4,24 @@
 	<title>Admin Panel - Alexander Daman Podesta's Resume</title>
 	<link rel="stylesheet" type="text/css" href="/css/topbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="icon" type="image/png" href="/images/index/base/favicon.png">
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="/" class="active">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/skills">Skills</a></li>
-				<li><a href="/contact">Contact</a></li>
-                <li><a href="/projects">Projects</a></li>
-				<li><a href="/education">Education</a></li>
-                <li><a href="/references">References</a></li>
-                <li><a href="/chatgpt">ChatGPT</a></li>
-			</ul>
-		</nav>
+			<div>
+			  <button onclick="window.location.href='/'">Home</button>
+			  <button class="active" onclick="window.location.href='/admin'">Admin</button>
+			  <button onclick="window.location.href='/about'">About</button>
+			  <button onclick="window.location.href='/skills'">Skills</button>
+			  <button onclick="window.location.href='/contact'">Contact</button>
+			  <button onclick="window.location.href='/projects'">Projects</button>
+			  <button onclick="window.location.href='/education'">Education</button>
+			  <button onclick="window.location.href='/references'">References</button>
+			  <button onclick="window.location.href='/chatgpt'">ChatGPT</button>
+			</div>
+		  </nav>		  
 	</header>
 	<main>
 		<h1>Admin Panel</h1>
@@ -28,12 +31,13 @@
 			<input type="text" id="username" name="username"><br><br>
 			<label for="password">Password:</label>
 			<input type="password" id="password" name="password"><br><br>
-			<input type="submit" value="Login">
+			<button type="submit" value="Login">Login</button>
 		</form>
 		
 		<h2>Reference Approval</h2>
 		<!-- This is where you would add code to display references awaiting approval -->
 		<!-- Once approved, you would add code to show the approved references on the references.html page -->
 	</main>
+	<script src="/js/admin.js"></script>
 </body>
 </html>

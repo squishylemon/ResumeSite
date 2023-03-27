@@ -4,26 +4,27 @@
 	<title>References - Alexander Daman Podesta</title>
 	<link rel="stylesheet" type="text/css" href="/css/topbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/refer.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="icon" type="image/png" href="/images/index/base/favicon.png">
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/skills">Skills</a></li>
-				<li><a href="/contact">Contact</a></li>
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/education">Education</a></li>
-				<li><a href="/references" class="active">References</a></li>
-				<li><a href="/chatgpt">ChatGPT</a></li>
-			</ul>
-		</nav>
+			<div>
+			  <button onclick="window.location.href='/'">Home</button>
+			  <button onclick="window.location.href='/admin'">Admin</button>
+			  <button onclick="window.location.href='/about'">About</button>
+			  <button onclick="window.location.href='/skills'">Skills</button>
+			  <button onclick="window.location.href='/contact'">Contact</button>
+			  <button onclick="window.location.href='/projects'">Projects</button>
+			  <button onclick="window.location.href='/education'">Education</button>
+			  <button class="active" onclick="window.location.href='/references'">References</button>
+			  <button onclick="window.location.href='/chatgpt'">ChatGPT</button>
+			</div>
+		  </nav>		  
 	</header>
 	<main>
 		<h1>References</h1>
-		<button onclick="window.print()">Print</button>
-		<button onclick="window.print()">Download PDF</button>
 		<p>Use the form below to add a new reference:</p>
 		<form>
 			<label for="company">Company:</label>
@@ -34,12 +35,15 @@
 			<textarea id="description" name="description"></textarea><br><br>
 			<label for="contact">Contact (email or phone):</label>
 			<input type="text" id="contact" name="contact"><br><br>
-			<input type="submit" value="Submit">
+			<button>Submit</button>
 		</form>
 		<h2>References List</h2>
 		<ul>
 			<!-- Add references dynamically using JavaScript -->
 		</ul>
 	</main>
+	<footer>
+		<button class="print-button" onclick="window.print()">Print</button>
+	  </footer> 
 </body>
 </html>

@@ -1,17 +1,5 @@
-/* Set body background color */
-body {
-    background-color: #222;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  /* Set main section padding */
-  main {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-  }
+
+
   
   button {
     background-color: #ffd700;
